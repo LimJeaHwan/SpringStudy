@@ -6,21 +6,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/board")
 public class BoardController {
 	
 private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
-	@RequestMapping(value = "/board/register")
+	@RequestMapping(value = "/register")
 	public void registerForm() {
 		logger.info("registerForm");
 	}
 	
-	@RequestMapping("/board/modify")
+	@RequestMapping("/modify")
 	public void modifyForm() {
 		logger.info("modifyForm");
 	}
 
-	@RequestMapping("/board/list")
+	@RequestMapping("/list")
 	public void list() {
 		logger.info("list");
 	}
